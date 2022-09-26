@@ -7,6 +7,15 @@ body {
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+footer
+{
+    background-color: #353535;
+    height: 200px;
+    width: 100%;
 }
 
 .image-mosaic {
@@ -39,11 +48,10 @@ body {
   
 .navbar
 {
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    justify-content: end;
     height: 2.5%;
-    background-color: aqua;
-    margin-bottom: 1%;
+    background-color: #353535;
 } 
 
 ul
@@ -56,6 +64,7 @@ ul
  display: block;
  float: left;
  padding: 0 10px;
+ color: #fff;
 }
 
   @media screen and (min-width: 600px) {
