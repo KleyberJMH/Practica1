@@ -1,8 +1,20 @@
-div
+.container
 {
     display: flex;
     background-color: #fff;
     padding: 5px;
+}
+
+.thumbnail
+{
+    height: 200px;
+    width: 30%;
+}
+
+.thumbnail img
+{
+    height: 200px;
+    width: 200px;
 }
 
 nav
@@ -10,7 +22,8 @@ nav
     background-color: #353535;
     padding: 5px;
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav a
@@ -24,7 +37,6 @@ nav a:hover
 {
     text-decoration: none;
     color: #c3c3c3;
-    margin-left: 10px;
 }
 
 body
@@ -32,7 +44,7 @@ body
     margin: 0px;
 }
 
-section
+main
 {
     padding: 15px;
     width: 75%;
@@ -45,8 +57,15 @@ section
 article
 {
     background-color: #fff;
-    padding: 5px;
-    margin: 5px;
+    padding-right: 5px;
+    margin: 10px;
+    display: flex;
+}
+
+article .content
+{
+    margin-left: 10px;
+    width: 70%;
 }
 
 aside
