@@ -7,14 +7,12 @@
 
 .thumbnail
 {
-    height: 200px;
-    width: 30%;
+    display: flex;
 }
 
 .thumbnail img
 {
-    height: 200px;
-    width: 200px;
+    filter: brightness(0.7);
 }
 
 nav
@@ -104,4 +102,9 @@ footer a
     text-decoration: none;
     border-bottom: 1px solid #fff;
     color: #fff;
+}
+
+figure img, aside video
+{
+    width: -webkit-fill-available;
 }
