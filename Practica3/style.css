@@ -13,12 +13,31 @@
 .thumbnail img
 {
     filter: brightness(0.7);
+    object-fit: fill;
+}
+
+.barra
+{
+    background-color: #353535;
+    display: flex;
+}
+
+.logo
+{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    color: #fff;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 nav
 {
-    background-color: #353535;
+    /* background-color: #353535; */
     padding: 5px;
+    width: 80%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -58,6 +77,8 @@ article
     padding-right: 5px;
     margin: 10px;
     display: flex;
+    height: 200px;
+    overflow: hidden;
 }
 
 article .content
@@ -73,6 +94,21 @@ aside
     float: right;
     height: auto;
     background-color: #c1c1c1;
+}
+
+.overflow-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+  }
+
+p
+{
+    width: 96%;
+    height: 64%;
+    overflow: hidden;
 }
 
 aside a
