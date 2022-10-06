@@ -5,8 +5,8 @@ var angulo3 = parseInt(prompt("Ingrese Angulo 3"))
 
 if (Number(angulo1+angulo2+angulo3) == 180)
 {
-    console.log("Los angulos del triangulo son correctos")
+    console.log("Los angulos del triangulo son correctos");
 } else {
-    console.log("Los angulos ingresados no permiten generar un triangulo")
+    console.log("Los angulos ingresados no permiten generar un triangulo");
 }
 
