@@ -1,13 +1,3 @@
-
-// var myCar = new Object();
-// myCar.fabricante = 'Ford';
-// myCar.modelo = 'Mustang';
-// myCar.year = 1969;
-
-// var otherCar = new Object();
-// otherCar.fabricante = 'Chevrolete';
-// otherCar.modelo = 'Prueba';
-// otherCar.year = 2020;
 var Gestor = {
     name : "",
     user : "",
