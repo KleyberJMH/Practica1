@@ -2,7 +2,7 @@
 var Gestor1 = {
     name : "Gestor1",
     user : "usuarioG1",
-    password : "passG2"
+    password : "passG1"
 };
 
 var Client1 = {
@@ -138,6 +138,7 @@ function repetirCada5Segundo() {
 }
 
 function mostrarGestores() {
+    console.log("Array gestores")
     console.log(arrayGestores);
 }
 
