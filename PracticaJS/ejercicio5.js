@@ -20,7 +20,6 @@ for (let i = 0; i < array.length; i++) {
     }else{
         console.log("No Pasa nada")
     }
-    
 }
 console.log("El numero mayor es el: " + mayor)
 
