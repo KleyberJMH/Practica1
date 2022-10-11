@@ -1,5 +1,5 @@
 // Ejercicio 1
-var a = 1, b = 2, c = 3;
+var a:number = 1, b:number = 2, c:number = 3;
 //Ejercicio 1.1
 console.log("Ejercicio 1.1")
 console.log("a + b + c = 1 + 2 + 3 = 6")
@@ -13,22 +13,12 @@ console.log("Ejercicio 1.3")
 console.log("a + b + c = 1 + 2 + 5 = 8")
 console.log (a+b+c);
 
-//Ejercicio 2.1
-console.write("<h1>Ejercicio 2</h1>")
-document.write("Hello world");
-document.write("<br>");
-//Ejercicio 2.2
-document.write("2*3");
-document.write("<br>");
-//Ejercicio 2.3
-document.write(2*3);
-document.write("<br>");
 
 
 //Ejercicio 3
-var number = 100;
-var string = "2022";
-var bool = true;
+var number:number = 100;
+var string:string = "2022";
+var bool:boolean = true;
 
 //Ejercicio 3.1 (STR a NMB)
 console.log("Ejercicio 3.1 String to Number");
