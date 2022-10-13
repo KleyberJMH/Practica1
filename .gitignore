@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /PracticaTypescript/node_modules
+/PruebaAngular/Angular/node_modules
 /BeforeImplement
 /.pnp
 .pnp.js
