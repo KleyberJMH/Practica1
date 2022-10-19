@@ -1,8 +1,15 @@
 //Ejercicio 4
-var numero = Number(prompt("Ingrese un numero"))
-if ((numero%2)==0)
+let n1= 1;
+let n2=2;
+function esPar(numero)
 {
-    console.log("El numero " + numero + " es par")
-} else{
-    console.log("El numero " + numero + " es impar")
+    if (numero%2==0)
+{
+    return true;
 }
+return false;
+}
+
+console.log(esPar(n1));
+console.log(esPar(n2));
+
