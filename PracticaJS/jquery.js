@@ -1,8 +1,16 @@
-$(document).ready(()=>{
+$(()=>{
     console.log("Ya se cargo la pagina")
-    $("#boton").click(()=>{
+    $("#boton-input").on("click",()=>{
+        let textarea = $("#textarea").val();
         let input = $("#input").val();
-        $("#container").append("<p>" + input + "</p>");
+        if(textarea || input !="")
+        {
+            console.log("Ejecute el boton")
+            $("#container").append("<p>" + input + " " + textarea + "</p>");
+            $("#input").val("");
+            $("#textarea").val("");
+        }
+        
     })
 })
 
