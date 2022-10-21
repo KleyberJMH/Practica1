@@ -2,9 +2,9 @@
 
 # dependencies
 /node_modules
-/PracticaTypescript/node_modules
-/PruebaAngular/Angular/node_modules
-/BeforeImplement
+/03Angular/PokeAngular/node_modules
+/03Angular/TourHeroes/node_modules
+/02Typescript/node_modules
 /.pnp
 .pnp.js
 

@@ -1,7 +1,8 @@
 const carta = 'bici coche balon _playstation bici coche peluche'
 
     let regalos = carta.split(" ");
-    let objeto = {};
+    let objeto = {
+    };
     
     let arrayRegalos = [];
     for (const regalo of regalos) {
