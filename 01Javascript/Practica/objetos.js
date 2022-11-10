@@ -1,72 +1,45 @@
 //Ejercicio 4
-var Gestor1 = {
-    name : "Gestor1", 
-    user : "usuarioG1",
-    password : "passG1"
-};
 
-var Client1 = {
-    name : "Cliente1",
-    user : "usuarioC1",
-    password : "passC1"
-};
+function Gestor (name, user, password){
+    this.name = name;
+    this.user = user;
+    this.password = password;
+}
 
-var Mensaje1 = {
-    sender : "Remitente1",
-    msg : "Mensaje ejemplo1"
-};
+function Client (name, user, password){
+    this.name = name;
+    this.user = user;
+    this.password = password;
+}
 
-var Transferencia1 = {
-    sender : "RemitenteT1",
-    reciver : "ReceptorT1",
-    amount : "100€"
-};
+function Mensaje (sender, reciver, msg) {
+    this.sender = sender;
+    this.reciver = reciver;
+    this.msg = msg;
+}
 
-var Gestor2 = {
-    name : "Gestor2",
-    user : "usuarioG2",
-    password : "passG2"
-};
+function Transferencia (sender, reciver, amount) {
+    this.sender = sender;
+    this.reciver = reciver;
+    this .amount = amount;
+}
 
-var Client2 = {
-    name : "Cliente2",
-    user : "usuarioC2",
-    password : "passC2"
-};
+let Gestor1 = new Gestor("Gestor1", "UserG1", "PassG1");
+let Gestor2 = new Gestor("Gestor2", "UserG2", "PassG2");
+let Gestor3 = new Gestor("Gestor3", "UserG3", "PassG3");
 
-var Mensaje2 = {
-    sender : "Remitente2",
-    msg : "Mensaje ejemplo2"
-};
+let Client1 = new Client("Cliente1", "UserC1", "PassC1");
+let Client2 = new Client("Cliente2", "UserC2", "PassC2");
+let Client3 = new Client("Cliente3", "UserC3", "PassC3");
 
-var Transferencia2 = {
-    sender : "RemitenteT2",
-    reciver : "ReceptorT2",
-    amount : "200€"
-};
+let Mensaje1 = new Mensaje("Remitente1", "Receptor1", "Mensaje Ejemplo1");
+let Mensaje2 = new Mensaje("Remitente2", "Receptor2", "Mensaje Ejemplo2");
+let Mensaje3 = new Mensaje("Remitente3", "Receptor3", "Mensaje Ejemplo3");
 
-var Gestor3 = {
-    name : "Gestor3",
-    user : "usuarioG3",
-    password : "passG3"
-};
+let Transferencia1 = new Transferencia("Remitente1", "Receptor1", "100€");
+let Transferencia2 = new Transferencia("Remitente2", "Receptor2", "200€");
+let Transferencia3 = new Transferencia("Remitente3", "Receptor3", "300€");
 
-var Client3 = {
-    name : "Cliente3",
-    user : "usuarioC3",
-    password : "passC3"
-};
-
-var Mensaje3 = {
-    sender : "Remitente3",
-    msg : "Mensaje ejemplo3"
-};
-
-var Transferencia3 = {
-    sender : "RemitenteT3",
-    reciver : "ReceptorT3",
-    amount : "300€"
-};
 
 //Ejercicio 5
 let arrayGestores = [Gestor1, Gestor2, Gestor3];
@@ -131,35 +104,13 @@ console.log(Transferencias)
 
 
 // Ejercicio 8 (Se salto el 7 porque no se entiende)
-let identificador;
-
 function repetirCada5Segundo() {
-  identificador = setInterval(mostrarGestores, 5000);
+setInterval(mostrarGestores, 5000);
 }
 
 function mostrarGestores() {
-    console.log("Array gestores")
+    console.log("Array gestores cada 5 segundos")
     console.log(arrayGestores);
 }
 
 repetirCada5Segundo();
-
-
-
-const fs = require('fs'); 
- 
-fs.writeFile('jsons/gestores.json', JsonGestores,'utf8', (err) => { 
-  if (err) throw err; 
-}); 
-
-fs.writeFile('jsons/clientes.json', JsonClientes,'utf8', (err) => { 
-    if (err) throw err; 
-  }); 
-
-fs.writeFile('jsons/mensajes.json', JsonMensajes,'utf8', (err) => { 
-    if (err) throw err; 
-  }); 
-
-fs.writeFile('jsons/transferencias.json', JsonTransferencias,'utf8', (err) => { 
-    if (err) throw err; 
-  }); 
